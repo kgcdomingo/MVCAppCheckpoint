@@ -46,19 +46,19 @@ namespace PhysicianDirectory.Controllers
            
                new Physician
             {
-                Id = 1, FirstName = "A", MiddleName = "B", LastName="C", BirthDate= DateTime.Now, Gender="Male", Height= 171, Weight= 65,
+                Id = 1, FirstName = "Kristhel", MiddleName = "Comin", LastName="Domingo", BirthDate= DateTime.Now, Gender="Male", Height= 171, Weight= 65,
                 ContactInfo = new ContactInfo {Id = 1, HomeAddress= "Address", HomePhone = 099999, OfficeAddress="Office Address", OfficePhone= 0999, CellphoneNumber=0999, EmailAdd= "michael.dionglay@pointwest.com.ph"  }
                 , Specialization = new Specialization { Id =1, Name="Opthalmologist", Description = "Opthalmologist Description"} },
 
              new Physician
             {
-                Id = 2, FirstName = "B", MiddleName = "C", LastName="D", BirthDate= DateTime.Now, Gender="Male", Height= 171, Weight= 65,
+                Id = 2, FirstName = "Michael", MiddleName = "Marasigan", LastName="Dionglay", BirthDate= DateTime.Now, Gender="Male", Height= 171, Weight= 65,
                 ContactInfo = new ContactInfo {Id = 2, HomeAddress= "Address", HomePhone = 099999, OfficeAddress="Office Address", OfficePhone= 0999, CellphoneNumber=0999, EmailAdd= "michael.dionglay@pointwest.com.ph"  }
                 , Specialization = new Specialization { Id =2, Name="Opthalmologist", Description = "Opthalmologist Description"} },
 
              new Physician
             {
-                Id = 3, FirstName = "D", MiddleName = "E", LastName="A", BirthDate= DateTime.Now, Gender="Male", Height= 171, Weight= 65,
+                Id = 3, FirstName = "Diana", MiddleName = "Reyes", LastName="Rosaroso", BirthDate= DateTime.Now, Gender="Male", Height= 171, Weight= 65,
                 ContactInfo = new ContactInfo {Id = 3, HomeAddress= "Address", HomePhone = 09999, OfficeAddress="Office Address", OfficePhone= 0999, CellphoneNumber=0999, EmailAdd= "michael.dionglay@pointwest.com.ph"  }
                 , Specialization = new Specialization { Id =3, Name="Opthalmologist", Description = "Opthalmologist Description"} }
 
