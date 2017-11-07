@@ -1,0 +1,74 @@
+﻿@model IEnumerable<PhysicianDirectory.Models.Physician>
+
+@{
+    ViewBag.Title = "ContactInformation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Styles.Render("~/Content/viewList.css")
+<h2>ContactInformation</h2>
+
+<p>
+    <a href="/Physician/Create" class="btn btn-default" name="Add Physician" style="float: right;">Add Physician</a>
+</p>
+<br />
+<br />
+<p>
+    <div class="icon-bar">
+
+        <a href="/Physician/PersonalInformation">Personal Information</a>
+        <a class="active" href="/Physician/ContactInformation">Contact Information</a>
+        <a href="/Physician/SpecializationInformation">Specialization</a>
+
+    </div>
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactInfo.HomeAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactInfo.HomePhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactInfo.OfficeAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactInfo.OfficePhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactInfo.EmailAdd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactInfo.CellphoneNumber)
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactInfo.HomeAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactInfo.HomePhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactInfo.OfficeAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactInfo.OfficePhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactInfo.EmailAdd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactInfo.CellphoneNumber)
+        </td>
+        
+        
+    </tr>
+}
+
+</table>

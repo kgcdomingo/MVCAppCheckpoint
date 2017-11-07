@@ -1,0 +1,64 @@
+﻿body {
+
+
+    background:url("https://beta.theglobeandmail.com/resizer/S14tBw7hvV4fawlXg8ufxNub-TU=/1200x0/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/PKH7KFO7VZFQJIN75EH2CIBHIA") top left no-repeat; 
+    background-size: 100%;
+    background-attachment:fixed;
+}
+
+
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    background-color: #112753;
+    vertical-align: middle;
+}
+#footer-text{
+    margin-left: 10px;
+    margin-top: 7px;
+    position: absolute;
+    color: white;
+}
+.parent-style-one {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+ .parent-style-one a {
+     background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+
+

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<PhysicianDirectory.Models.Physician>
+
+@{
+    ViewBag.Title = "PersonalInformation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using PhysicianDirectory.Utilities;
+@Styles.Render("~/Content/css")
+@Styles.Render("~/Content/viewList.css")
+    <h2>Personal Information</h2>
+
+
+    <a href="/Physician/Create" class="btn btn-default" name="Add Physician" style="float: right; border: 2px solid #112753">Add Physician</a>
+
+<br />
+<br />
+<p>
+    
+    <div class="icon-bar">
+
+        <a class="active" href="/Physician/PersonalInformation">Personal Information</a>
+        <a href="/Physician/ContactInformation">Contact Information</a>
+        <a href="/Physician/SpecializationInformation">Specialization</a>
+       
+    </div>
+    
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Height)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiddleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Height)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id },new { @class = "linkDesign" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "linkDesign" })
+            </td>
+        </tr>
+    }
+
+</table>
